@@ -1,4 +1,11 @@
 @extends('layouts.templet')
+@section('title')
+    About page
+@endsection
+
+@push('header')
+    About US
+@endpush
 
 @section('content')
 

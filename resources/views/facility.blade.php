@@ -1,19 +1,32 @@
 @extends('layouts.templet')
+@section('title')
+Facilities Page
+@endsection
 
+@push('header')
+    Facilites
+@endpush
 
-        <!-- Navbar End -->
+@section('content')
 
-        @section('content')
         <!-- Page Header End -->
         @include('includes.header')
         <!-- Page Header End -->
 
 
-        <!-- Facilities Start -->
+        <!-- About Start -->
         @include('includes.Facilities')
-        <!-- Facilities End -->
+        <!-- About End -->
 
 
-        
-        @section('content')
+        <!-- Call To Action Start -->
+
+        <!-- Team End -->
+
+
+        @endsection
+
+
+
+
 

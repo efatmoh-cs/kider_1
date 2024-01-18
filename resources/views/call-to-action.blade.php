@@ -1,4 +1,11 @@
 @extends('layouts.templet')
+@section('title')
+    Call to Action Page
+@endsection
+
+@push('header')
+    Become A Teachers
+@endpush
 
 @section('content')
 

@@ -26,7 +26,7 @@ class TestimoinalController extends Controller
 
     {
         // return view("addTestimoinal");
-        return view('admin.addTestimoinal');
+        return view('admin.addtestimoinal');
     }
 
 
@@ -59,7 +59,10 @@ class TestimoinalController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $testimoinal = Testimoinal::findOrFail($id);
+
+        return view('showtestimoinal', compact('testimoinal'));
+
     }
 
     /**
@@ -99,6 +102,7 @@ class TestimoinalController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Testimoinal::where('id', $id)->delete();
+        return redirect()->route('testimoinals');
     }
 }

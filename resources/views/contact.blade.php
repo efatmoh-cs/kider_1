@@ -1,6 +1,13 @@
 
 
 @extends('layouts.templet')
+@section('title')
+    contact Page
+@endsection
+
+@push('header')
+    contact us
+@endpush
 
 @section('content')
 

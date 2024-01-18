@@ -50,12 +50,19 @@
         </td>
 
             <td><a href="edittestimoinal/{{ $testimoinal->id }}">Edit</a></td>
-            <td><a href="updatetestimoinal/{{ $testimoinal->id }}">delete</a></td>
-            <td><a href="/{{ $testimoinal->id }}">show</a></td>
+            <td><a href="destroytestimoinal/{{ $testimoinal->id }}">delete</a></td>
+            <td><a href="showtestimoinal/{{ $testimoinal->id }}">show</a></td>
       </tr>
 @endforeach
     </tbody>
   </table>
+  <br>
+  <div >
+      <a class="btn btn-primary" href="{{route('createtestimoinal')}}">Add new Testimonial!!</a>
+     
+
+  </div>
+
 </div>
 
 </body>

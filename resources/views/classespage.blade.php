@@ -1,5 +1,11 @@
 @extends('layouts.templet')
+@section('title')
+    Classes page
+@endsection
 
+@push('header')
+    Classes
+@endpush
 
         <!-- Navbar End -->
 
@@ -11,11 +17,8 @@
         <!-- Page Header End -->
 
 
-        @include('includes.classes')
-        @include('includes.appointment')
+        @include('includes.schoolclass')
 
-        <!-- Testimonial Start -->
-        @include('includes.testimonial')
         <!-- Testimonial End -->
 
 
