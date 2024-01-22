@@ -23,13 +23,13 @@
             </div>
             <a href="{{route('contact')}}" class="nav-item nav-link">Contact Us</a>
         </div>
-        @if (Route::has('login'))
+        {{-- @if (Route::has('login'))
         @auth
             <a href="{{route('classes')}}" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">
                 Admin
             </a>
         @else
-        <a href="{{ route('login') }}" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="{{ route('login') }}" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a> --}}
     </div>
 </nav>
 <script>
